@@ -97,6 +97,8 @@ body {
 	font-weight: var(--fw-400);
 	color: var(--clr-neutral-400);
 	background: var(--clr-primary-200);
+    background-image: url("images/pattern-background-mobile.svg");
+    background-size: cover;
 }
 
 h2 {
@@ -120,6 +122,10 @@ h2 {
 
 .padding-24 {
     padding: 1.5rem;
+}
+
+.padding-16 {
+    padding: 1rem;
 }
 
 .text-neutral-400 {
@@ -186,8 +192,13 @@ a:hover, a:focus, .link:hover, .link:focus {
 }
 
 .card {
+    margin: 0.5rem;
     overflow: hidden;
-    max-width: 450px;
+    max-width: 360px;
+}
+
+.card__content {
+ padding: 2.5rem 1.5rem;
 }
 
 .button {
@@ -204,6 +215,7 @@ a:hover, a:focus, .link:hover, .link:focus {
 .button[data-type="primary"] {
     color: var(--clr-neutral-100);
     background-color: var(--clr-primary-400);
+    box-shadow: 0 15px 20px 5px hsla(245, 55%, 52%, 0.4);;
 }
 
 .button[data-type="primary"]:hover, .button[data-type="primary"]:focus {
@@ -212,9 +224,20 @@ a:hover, a:focus, .link:hover, .link:focus {
 
 .button[data-type="white"] {
     padding: 0;
+    font-weight: var(--fw-900);
     color: var(--clr-neutral-400);
 }
 
 .button[data-type="white"]:hover, .button[data-type="white"]:focus {
     color: var(--clr-neutral-800);
+}
+
+@media (min-width: 768px) {
+    .card {
+        max-width: 450px;
+    }
+
+    .card__content {
+        padding: 3rem;
+    }
 }
