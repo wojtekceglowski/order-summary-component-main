@@ -98,7 +98,8 @@ body {
 	color: var(--clr-neutral-400);
 	background: var(--clr-primary-200);
     background-image: url("images/pattern-background-mobile.svg");
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 h2 {
@@ -192,7 +193,7 @@ a:hover, a:focus, .link:hover, .link:focus {
 }
 
 .card {
-    margin: 0.5rem;
+    margin: 1rem;
     overflow: hidden;
     max-width: 360px;
 }
@@ -215,7 +216,7 @@ a:hover, a:focus, .link:hover, .link:focus {
 .button[data-type="primary"] {
     color: var(--clr-neutral-100);
     background-color: var(--clr-primary-400);
-    box-shadow: 0 15px 20px 5px hsla(245, 55%, 52%, 0.4);;
+    box-shadow: 0 15px 20px 5px hsla(245, 55%, 52%, 0.2);;
 }
 
 .button[data-type="primary"]:hover, .button[data-type="primary"]:focus {
@@ -233,6 +234,10 @@ a:hover, a:focus, .link:hover, .link:focus {
 }
 
 @media (min-width: 768px) {
+
+    body {
+        background-image: url("images/pattern-background-desktop.svg");
+    }
     .card {
         max-width: 450px;
     }
